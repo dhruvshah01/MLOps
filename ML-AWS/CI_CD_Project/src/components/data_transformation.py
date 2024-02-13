@@ -3,7 +3,7 @@ import numpy as np
 import sys, os
 from dataclasses import dataclass
 
-from data_ingestion import DataIngestion
+#from data_ingestion import DataIngestion
 from sklearn.impute import SimpleImputer
 from sklearn.preprocessing import OneHotEncoder, StandardScaler
 from sklearn.compose import ColumnTransformer
@@ -101,8 +101,8 @@ class DataTransformation:
 
     
 if __name__ == "__main__":
-    obj = DataIngestion()
-    train, test = obj.initiate_data_ingestion()
+    # obj = DataIngestion()
+    # train, test = obj.initiate_data_ingestion()
 
     data_transformation = DataTransformation()
     data_transformation.initiate_data_transform(train, test)
